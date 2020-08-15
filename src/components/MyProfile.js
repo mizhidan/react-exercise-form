@@ -40,7 +40,7 @@ handleCheckboxChange = event => {
 
   render() {
     return (
-      <form>
+      <form className="form">
         <h1>My Profile</h1>
         <h2>Name</h2>
         <input 
@@ -54,8 +54,8 @@ handleCheckboxChange = event => {
           <option value="Female" onSelect={this.handleGenderChange}>Female</option>
         </select>
         <h2>Descripion</h2>
-        <textarea defaultValue="Description about yourself" value={this.state.value} onChange={this.handleDescriptionChange}></textarea>
-        <div>
+        <textarea placeholder="Description about yourself" value={this.state.value} onChange={this.handleDescriptionChange}></textarea>
+        <div className="check-info">
         <input type="checkbox" checked={this.state.value} onClick={this.handleCheckboxChange}></input>
         <span>I have read the terms of conduct</span>
         </div>
